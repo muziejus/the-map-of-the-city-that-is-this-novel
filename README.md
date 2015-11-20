@@ -39,9 +39,11 @@ instead use the GUI provided by [BibDesk](http://bibdesk.sourceforge.net/),
 which, in turn, speaks to [Zotero](http://zotero.org) via the
 [Zot2Bib](http://mackerron.com/zot2bib/) plugin. 
 
-## Wouldn’t It Make More Sense to Use MultiMarkdown?
+## Wouldn’t it make more sense to use MultiMarkdown?
 
-Probably. Version 2? [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) would also probably help moving this syllabus to a [Jekyll](http://jekyllrb.com) course site.
+Probably. Version 2? [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+would also probably help moving this syllabus to a
+[Jekyll](http://jekyllrb.com) course site.
 
 ## Credits
 
