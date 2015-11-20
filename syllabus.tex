@@ -16,6 +16,7 @@
 %	minbibnames=1,
 	short,
 	backend=biber]{biblatex-chicago} % Adds biblatex.
+\usepackage[breaklinks=true]{hyperref}
 
 % Definitions
 \def\myauthor{Author}
@@ -51,6 +52,9 @@
 \def\mycourseurl{http://some.jekyll.site/or/whatever}
 \def\myofficehours{Wednesdays, 14:00--16:00, 244 Greene, 506}
 
+% For the pdf
+\hypersetup{pdftitle={\mycoursename}, pdfauthor={\myauthor}}
+
 \nocite{burgess, certeau, city-limits, park, qualitative-gis-intro, 
 rebel-cities, simmel-individuality, situated-knowledges, non-quant-gis}
 \bibliocommand
@@ -67,7 +71,7 @@ rebel-cities, simmel-individuality, situated-knowledges, non-quant-gis}
  \setsansfont[Mapping=tex-text]{Helvetica} 
  \setmonofont[Mapping=tex-text,Scale=0.8]{DejaVu Sans Mono}
 
-\title{\LARGE \mytitle \\ \Large\texttt{\mycourseurl}}     
+\title{\LARGE \mytitle \\ \Large\url{\mycourseurl}}     
 \author{\Large\myauthor\\ \footnotesize\texttt{\noindent\myemail}}
 \date{\myterm. \myaddress \\ \mycoursetime \\ \small Office hours: \myofficehours}
 
