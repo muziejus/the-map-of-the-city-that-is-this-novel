@@ -15,6 +15,34 @@ sections of the syllabus.
 
 It also has a bibliography generated via `biber` using the file `syllabus.bib`.
 
+## How to use this
+
+Once the repository is cloned, `cd` into the directory and make any changes to
+any of the `.tex` files.
+
+The repository assumes the presence of a TeX environment. I use
+[MacTeX](https://tug.org/mactex/). Once everything is installed (and it will
+take some time), typesetting the `.tex` file is as simple as:
+
+```
+$ xelatex syllabus.tex
+$ biber syllabus
+$ xelatex syllabus.tex
+```
+
+Note the lack of a suffix on the command sent to `biber`. Furthermore, these
+three commands should be run inside the directory in which `syllabus.tex`
+resides.
+
+Editing the BibTeX file by hand is, in my opinion, asking for trouble. I
+instead use the GUI provided by [BibDesk](http://bibdesk.sourceforge.net/),
+which, in turn, speaks to [Zotero](http://zotero.org) via the
+[Zot2Bib](http://mackerron.com/zot2bib/) plugin. 
+
+## Wouldn’t It Make More Sense to Use MultiMarkdown?
+
+Probably. Version 2? [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) would also probably help moving this syllabus to a [Jekyll](http://jekyllrb.com) course site.
+
 ## Credits
 
 In order to get the syllabus to sound “NYUish,” I copied (sometimes very
