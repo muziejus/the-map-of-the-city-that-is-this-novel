@@ -3,6 +3,18 @@
 
 \usepackage{fontspec} % for xelatex
 \usepackage{longtable} % for the course calendar
+\usepackage[notes, 
+%	isbn=false,
+%	url=false,
+% notefield=false,
+%	bookseries=false,
+	includeall=false, % takes care of the above
+	doi=true,
+%	citereset=chapter,
+%	maxbibnames=2, % only works in the bib and not the footcite.
+%	minbibnames=1,
+	short,
+	backend=biber]{biblatex-chicago} % Adds biblatex.
 
 % Definitions
 \def\myauthor{Author}
@@ -10,7 +22,7 @@
 \def\mycopyright{\myauthor}
 \def\mykeywords{}
 \def\mybibliostyle{plain}
-\def\mybibliocommand{}
+\def\bibliocommand{\bibliography{syllabus.bib}}
 \def\mysubtitle{}
 \def\myaffiliation{NYU}
 \def\myaddress{}
@@ -35,6 +47,10 @@
 \def\mykeywords{Literature, Digital Humanities, City}
 \def\mysubtitle{Syllabus}
 \def\mytitle{{\normalsize \textsc{\mycoursecode}\\} \HUGE \mycoursename}
+
+\nocite{burgess, certeau, city-limits, park, pavlovskaya, qualitative-gis-intro, 
+rebel-cities, simmel-individuality, situated-knowledges}
+\bibliocommand
 
 \begin{document}
 
@@ -94,6 +110,7 @@
 
 
 %% Uncomment if you want a printed bibliography.
-%\printbibliography 
+\newpage
+\printbibliography 
 
 \end{document}

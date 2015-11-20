@@ -1,3 +1,7 @@
+*.bcf
+*.blg
+*.run.xml
 *.aux
 *.bbl
 *.log
+sample-syllabi
