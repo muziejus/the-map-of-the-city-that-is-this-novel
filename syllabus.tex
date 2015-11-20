@@ -20,11 +20,11 @@
 \def\myauthor{Author}
 \def\mytitle{Title}
 \def\mycopyright{\myauthor}
-\def\mykeywords{}
 \def\mybibliostyle{plain}
 \def\bibliocommand{\bibliography{syllabus.bib}}
 \def\mysubtitle{}
-\def\myaffiliation{NYU}
+\def\mykeywords{}
+\def\myaffiliation{}
 \def\myaddress{}
 \def\myemail{}
 \def\myweb{}
@@ -34,6 +34,8 @@
 \def\mycoursecode{}
 \def\mycoursename{}
 \def\myterm{}
+\def\mycoursetime{}
+\def\myofficehours{}
 
 % My Changes
 \def\mycoursecode{eng-ua 731.001}
@@ -41,12 +43,10 @@
 \def\myterm{Spring 2016}
 \def\myaddress{Room $n$}
 \def\myemail{moacir@nyu.edu}
-\def\myweb{http://www.moacir.com}
-\def\myaffiliation{\ \\New York University}
 \def\myauthor{Moacir P. de Sá Pereira}
-\def\mykeywords{Literature, Digital Humanities, City}
-\def\mysubtitle{Syllabus}
 \def\mytitle{{\normalsize \textsc{\mycoursecode}\\} \HUGE \mycoursename}
+\def\mycoursetime{Tuesdays \& Thursdays, 16:55--18:10}
+\def\myofficehours{Wednesdays, 14:00--16:00, 244 Greene, 506}
 
 \nocite{burgess, certeau, city-limits, park, pavlovskaya, qualitative-gis-intro, 
 rebel-cities, simmel-individuality, situated-knowledges}
@@ -56,41 +56,28 @@ rebel-cities, simmel-individuality, situated-knowledges}
 
 % Get some fonts for xelatex.
 % EB Garamond is available here: https://www.google.com/fonts/specimen/EB+Garamond
+% It has no bold form, so Helvetica stands in, instead
 % DejaVu is a whole family of fonts, and I love the mono version: http://dejavu-fonts.org/wiki/Main_Page
  \setromanfont[Mapping=tex-text,BoldFont={Helvetica Bold}]{EB Garamond} 
  \setsansfont[Mapping=tex-text]{Helvetica} 
  \setmonofont[Mapping=tex-text,Scale=0.8]{DejaVu Sans Mono}
- 
-
-
-%% blank label items; hanging bibs for text
-%% Custom hanging indent for vita items
-\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
-
-%% RCS info string for version tracking
-%\chapterstyle{article-4}  % alternative styles are defined in latex-custom-kjh/needs-memoir/
-% \pagestyle{kjh}
 
 \title{\LARGE \mytitle}     
 \author{\Large\myauthor\\ \footnotesize\texttt{\noindent\myemail}}
-\date{\myterm. \myaddress \\ Tuesdays and Thursdays, 16:55--18:10}
+\date{\myterm. \myaddress \\ \mycoursetime \\ \small Office hours: \myofficehours}
 
 \maketitle
 
-%
 % Main Content
-%
 
 \section*{Course description}
 \input{sections/course-description}
-
 
 \subsection*{Goals of the course}
 \input{sections/goals}
      
 \section*{Novels available at NYU BookCenter \small (hardcopies required)}
 \input{sections/books}
-
 	
 \section*{Course requirements \& policies}
 
@@ -107,7 +94,6 @@ rebel-cities, simmel-individuality, situated-knowledges}
 
 \newpage
 \input{sections/calendar}
-
 
 %% Uncomment if you want a printed bibliography.
 \newpage
