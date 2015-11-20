@@ -33,8 +33,9 @@
 \def\myrevision{}
 \def\mycoursecode{}
 \def\mycoursename{}
-\def\myterm{}
 \def\mycoursetime{}
+\def\mycourseurl{}
+\def\myterm{}
 \def\myofficehours{}
 
 % My Changes
@@ -46,6 +47,7 @@
 \def\myauthor{Moacir P. de Sá Pereira}
 \def\mytitle{{\normalsize \textsc{\mycoursecode}\\} \HUGE \mycoursename}
 \def\mycoursetime{Tuesdays \& Thursdays, 16:55--18:10}
+\def\mycourseurl{http://some.jekyll.site/or/whatever}
 \def\myofficehours{Wednesdays, 14:00--16:00, 244 Greene, 506}
 
 \nocite{burgess, certeau, city-limits, park, pavlovskaya, qualitative-gis-intro, 
@@ -62,7 +64,7 @@ rebel-cities, simmel-individuality, situated-knowledges}
  \setsansfont[Mapping=tex-text]{Helvetica} 
  \setmonofont[Mapping=tex-text,Scale=0.8]{DejaVu Sans Mono}
 
-\title{\LARGE \mytitle}     
+\title{\LARGE \mytitle \\ \Large\texttt{\mycourseurl}}     
 \author{\Large\myauthor\\ \footnotesize\texttt{\noindent\myemail}}
 \date{\myterm. \myaddress \\ \mycoursetime \\ \small Office hours: \myofficehours}
 
